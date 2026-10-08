@@ -1,0 +1,13 @@
+{
+  "name": "get_current_datetime",
+  "description": "Returns the current live date, time, day of the week, year, and timezone. Call this tool whenever the user asks for the current date, time, today's day, or needs time context for a query.",
+  "parameters": {
+    "type": "OBJECT",
+    "properties": {
+      "timezone": {
+        "type": "STRING",
+        "description": "Optional timezone name such as 'UTC', 'Asia/Kolkata', 'America/New_York', 'Europe/London'. Defaults to the local system timezone if not specified."
+      }
+    }
+  }
+}

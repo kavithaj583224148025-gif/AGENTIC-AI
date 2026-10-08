@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "description": "Performs basic mathematical calculations such as addition, subtraction, multiplication, division, and exponentiation.",
+  "parameters": {
+    "type": "OBJECT",
+    "properties": {
+      "operation": {
+        "type": "STRING",
+        "enum": ["add", "subtract", "multiply", "divide", "power"],
+        "description": "The mathematical operation to execute. Allowed values: 'add', 'subtract', 'multiply', 'divide', 'power'."
+      },
+      "a": {
+        "type": "NUMBER",
+        "description": "The first numeric operand."
+      },
+      "b": {
+        "type": "NUMBER",
+        "description": "The second numeric operand."
+      }
+    },
+    "required": ["operation", "a", "b"]
+  }
+}

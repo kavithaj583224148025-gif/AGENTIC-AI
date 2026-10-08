@@ -1,0 +1,18 @@
+{
+  "name": "web_search",
+  "description": "Searches the live web for a given query to retrieve up-to-date facts, current events, weather, news, or general knowledge. Returns a list of relevant titles, snippets, and URLs.",
+  "parameters": {
+    "type": "OBJECT",
+    "properties": {
+      "query": {
+        "type": "STRING",
+        "description": "The search query or keywords to look up on the web."
+      },
+      "max_results": {
+        "type": "INTEGER",
+        "description": "Optional maximum number of search results to return (default is 3, maximum 5)."
+      }
+    },
+    "required": ["query"]
+  }
+}
